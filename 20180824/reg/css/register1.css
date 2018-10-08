@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2018-09-20 10:22:26
+ * @version $Id$
+ */
+
+/*公共样式*/
+ul,li{list-style:none;}
+*{margin:0; padding:0;}
+a:link,a:visited,a:hover{text-decoration: none;}
+body{padding-bottom:100px; text-align:justify;}
+/*灰色导航条样式*/
+.header-top{width:100%;  background-color:#484d57; font-size:14px; color:#bfc0c3;}
+.header-top .container{height:40px;}
+.header-top .p1{float:left; line-height:40px;}
+.header-top .p2{float:right; line-height:40px;}
+.header-top a:link,.header-top a:visited{color:#bfc0c3;}
+@media screen and (max-width:760px){
+    .header-top .container{height:auto;}
+    .header-top .p1{line-height:30px;}
+    .header-top .p2{line-height:30px;}
+}
+/*logo和标题以及选择语言*/
+.logo_container h1{ padding:10px 0 22px;}
+.logo_container .logo_title{text-align:center; color:#0c3567; font-size:36px; font-weight:bold; margin-top:36px; margin-top: -86px; margin-bottom: 30px;}
+.logo_container select{float:right; margin-top:-100px; border:0 none; outline:0 none; font-size:16px; color:#0c3567; font-weight:bold;}
+@media screen and (max-width:760px){
+    .logo_container .logo_title{ margin-top:0; margin-top:0; margin-bottom:30px; font-size:22px;}
+    .logo_container select{ margin-top:-200px;}
+}
+.nav{width:100%; height:57px; background-color:#002e62; font-size:0;}
+.nav ul>li{float:left; font-size:18px; color:#fff; width:20%; text-align:center; line-height:58px;}
+.nav .nav_list{position:relative; top:-2px;}
+@media screen and (max-width:760px){
+    .nav{height:auto;}
+    .nav ul>li{float:none; width:50%; text-align:left;}
+}
+.contact_info_title{box-shadow:0 10px 30px #d5d5d5;}
+.contact_info_title h2{font-size:32px; color:#0c3567;padding-top:30px; font-weight:bold; padding-bottom:20px; }
+.info .container{ background-color:#ededed; margin-top:26px; color:#0c3567; font-weight:bold; font-size:16px;}
+.info .sex{ padding-left:20px; margin-top:32px;}
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 2px solid #0c3567;
+    text-indent: .15em;
+    line-height: 1;
+}
+input[type="radio"]:checked + label::before {
+    background-color: #0c3567;
+    background-clip: content-box;
+    padding: .2em;
+}
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #0c3567;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #0c3567;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #0c3567;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #0c3567;
+}
+.info .male,.info .female{float:left;}
+.info .male{margin-right:40px;}
+.title{padding-left:20px; margin-top:28px; position:relative;}
+.title select{width:100%; border:0 none; outline:0 none; height:47px; border-radius:4px; appearance: none; -webkit-appearance: none;-moz-appearance: none; padding-left:58px;}
+.title .title_icon{position:absolute; left:30px; top:15px;}
+.title .line{position:absolute; left:60px; top:10px;}
+.title .to_bottom{position:absolute; right:30px; top:18px;}
+.first_name{ position:relative;}
+.first_name>input{width:100%; height:47px; border-radius:4px; border:0 none; outline:0 none; padding-left:58px; }
+.first_name .title_icon{position:absolute; left:30px; top:42px;}
+.first_name .line{position:relative; left:42px; top:36px;}
+
+.middle_name{ position:relative;}
+.middle_name>input{width:100%; height:47px; border-radius:4px; border:0 none; outline:0 none; padding-left:58px;}
+.middle_name .title_icon{position:absolute; left:30px; top:42px;}
+.middle_name .line{position:relative; left:42px; top:36px;}
+
+.last_name{ position:relative;}
+.last_name>input{width:100%; height:47px; border-radius:4px; border:0 none; outline:0 none; padding-left:58px;}
+.last_name .title_icon{position:absolute; left:30px; top:42px;}
+.last_name .line{position:relative; left:42px; top:36px;}
+.date_box>input{width:100%; height:47px; border-radius:4px; border:0 none; outline:0 none; padding-left:20px;}
+.primary_telephone,.secondary_telephone,.email_address{ position:relative;}
+.primary_telephone>input,.secondary_telephone>input,.email_address>input{width:100%; height:47px; border-radius:4px; border:0 none; outline:0 none; padding-left:58px;}
+.phone .title_icon{position:absolute; left:30px; top:42px;}
+.phone .line{position:relative; left:42px; top:36px;}
+.email_address{position:relative;}
+.email_address .email_prompt{color:#c40e0e; font-size:14px; position:absolute; left:28px; bottom:-34px; display:none;}
+.address select{padding-left:15px;}
+.address2 select{padding-left:15px;}
+.address2 input{width:100%; height:47px; border-radius:4px; border:0 none; outline:0 none; padding-left:58px;}
+.address2 .postal_code input{padding-left:15px;}
+.if_lived{margin-top:36px; padding-left:15px;}
+.if_lived .yes,.if_lived .no{display:inline-block; *display:inline; *zoom:1;}
+.if_lived .yes{margin-left:36px; margin-right:50px;}
+.fill_in_title{padding-left:15px; margin-top:28px; }
+.confirm{margin-left:20px; margin-top:34px; position:relative; }
+.confirm .confirm_box{display:inline-block;*display:inline; *zoom:1; position:absolute; left:-30px; top:4px;}
+.confirm input{ width:15px; height:15px; border:2px solid #0c3567； border-radius:2px;}
+.confirm #confirm+label{width:15px; height:15px; border:2px solid #0c3567; border-radius:2px;}
+#confirm:checked +label::before{ float:left;  content: "\2714"; text-align:center; color:#0c3567; line-height:15px;}
+.confirm input[type=checkbox]{visibility: hidden;}
+.submit{margin-top:48px; padding-bottom:28px;}
+.submit button{width:270px; height:47px; background-color:#006069; color:#fff; border:0 none; outline:0 none; position:relative; left:50%; margin-left:-135px; border-radius:4px;}
